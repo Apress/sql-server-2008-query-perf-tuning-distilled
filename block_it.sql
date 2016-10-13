@@ -1,0 +1,12 @@
+IF (SELECT  OBJECT_ID('dbo.t1')
+   ) IS NOT NULL 
+    DROP TABLE dbo.t1
+GO
+CREATE TABLE dbo.t1
+    (c1 INT
+    ,c2 INT
+    ,c3 DATETIME)
+INSERT  INTO dbo.t1
+VALUES  (11, 12, GETDATE())
+INSERT  INTO dbo.t1
+VALUES  (21, 22, GETDATE())

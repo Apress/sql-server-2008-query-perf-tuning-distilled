@@ -1,0 +1,7 @@
+ALTER DATABASE AdventureWorks2008 ADD FILEGROUP INDEXES ;
+
+ALTER DATABASE AdventureWorks2008 ADD FILE 
+(NAME = AdventureWorks2008_Data2,
+  FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL10.GF2008\MSSQL\DATA\AdventureWorks20082.ndf',
+  SIZE = 1MB,
+  FILEGROWTH = 10%) TO FILEGROUP Indexes ;

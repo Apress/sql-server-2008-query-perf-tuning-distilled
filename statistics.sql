@@ -1,0 +1,2 @@
+SELECT * FROM t1 WHERE c1 BETWEEN 21 AND 25 --Reads 5 rows
+SELECT * FROM t1 WHERE c1 BETWEEN 1 AND 40  --Reads all rows
